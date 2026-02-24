@@ -20,14 +20,20 @@ Each condition is modelled separately for **GABAergic** and **glutamatergic** op
 
 ```
 thesis/
-├── whisker.py                            # Whisker stimulation only
-├── whisker_opto_hbox_gaba_new_params.py  # Whisker + GABAergic optogenetics
-├── whisker_opto_hbox_glut_new_params.py  # Whisker + glutamatergic optogenetics
-├── opto_only_hbox_gaba_optimal.py        # Optogenetics only (GABA), no whisker input
-├── opto_only_hbox_glut_optimal.py        # Optogenetics only (Glut), no whisker input
-├── tdcs_whisker_new_params.py            # tDCS + whisker stimulation
-├── tdcs_opto_only_hbox_gaba_optimal.py   # tDCS + GABAergic optogenetics only
-├── tdcs_opto_only_hbox_glut_optimal.py   # tDCS + glutamatergic optogenetics only
+├── simulations/
+│   ├── whisker/
+│   │   ├── whisker.py                    # Whisker stimulation only
+│   ├── whisker_opto/
+│   │   ├── opto_gaba.py                  # Whisker + GABAergic optogenetics
+│   │   └── opto_glut.py                  # Whisker + glutamatergic optogenetics
+│   └── whisker_tdcs/
+│       ├── tdcs_whisker.py               # tDCS + whisker stimulation
+└── opto_only/
+│       ├──opto_gaba.py                   # Optogenetics only (GABA)
+│       ├──opto_glut.py                   # Optogenetics only (Glut)
+└── tdcs_opto/
+│       ├── tdcs_opto_gaba.py            # tDCS + GABAergic optogenetics only
+│       └── tdcs_opto_glut.py            # tDCS + Glutamatergic optogenetics only
 ├── param/                                # Model parameters
 └── util/                                 # Utility functions
 ```
