@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Simulation outputs
+results/
+*.npy
+*.npz
+*.mat
+*.h5
+*.hdf5
+
+# Figures
+*.png
+*.pdf
+*.eps
+*.svg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
